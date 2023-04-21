@@ -47,8 +47,6 @@
         document.getElementById('svg').innerHTML = getSvg(text, 1, 0, 0);
         const renderedTextRect = document.querySelector('#svg text').getBoundingClientRect();
         const containerRect = document.getElementById('svg').getBoundingClientRect();
-        console.log(renderedTextRect, containerRect);
-        console.log(renderedTextRect.width);
         document.getElementById('svg').innerHTML = getSvg(
           text,
           Math.min(244.0 / renderedTextRect.width, 1),
